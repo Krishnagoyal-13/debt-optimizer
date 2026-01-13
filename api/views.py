@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .engine import RepaymentOptimizer
 
-class OptimizeDebtView(APIView):
+class DebtOptimizeView(APIView):
     def post(self, request):
         # Extract data from request
         debts = request.data.get('debts', [])
